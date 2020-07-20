@@ -1,0 +1,2 @@
+# VSProjectContextMenuExtend
+VS项目右键菜单扩展

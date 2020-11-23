@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CommandTable language="en-us" xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<Extern href="stdidcmd.h" />
+	<Extern href="vsshlids.h" />
+	<Commands package="VSIXProject1">
+		<Buttons>
+			<Button guid="ddxMenu1" id="Command1Id" priority="0x0100" type="Button">
+				<Parent guid="ddxMenu1" id="group1" />
+				<Strings>
+					<ButtonText>发布到Nuget服务器</ButtonText>
+				</Strings>
+			</Button>
+		</Buttons>
+
+		<Groups>
+			<Group guid="ddxMenu1" id="group1" priority="0x10">
+				<Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_PROJNODE" />
+			</Group>
+		</Groups>
+		
+	</Commands>
+	<Symbols>
+		<GuidSymbol name="VSIXProject1" value="{0cdcba5e-10e6-4d93-8fba-147d6cccfa96}" />
+		<GuidSymbol name="ddxMenu1" value="{0a9adc9e-5c4d-4c1a-8209-3756fcdd7f4d}">
+			<!--<IDSymbol name="menu1" value="0x10000"/>-->
+			<IDSymbol name="Command1Id" value="0x100" />
+			<IDSymbol name="group1" value="0x10200" />
+		</GuidSymbol>
+	</Symbols>
+
+</CommandTable>
